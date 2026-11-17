@@ -1,0 +1,36 @@
+/* Thanh điều hướng nhỏ cho từng Exercise*/
+.lab-nav {
+  position: fixed;
+  left: 12px;
+  bottom: 12px;
+  z-index: 9999;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  font: 13px/1.2 "Segoe UI", Roboto, Arial, sans-serif;
+  background: #171f3a;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 999px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, .3);
+}
+
+.lab-nav a {
+  color: #ffd9a8;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.lab-nav a:hover {
+  text-decoration: underline;
+}
+
+.lab-nav span {
+  opacity: .9;
+}
+
+@media (max-width: 520px) {
+  .lab-nav span {
+    display: none;
+  }
+}

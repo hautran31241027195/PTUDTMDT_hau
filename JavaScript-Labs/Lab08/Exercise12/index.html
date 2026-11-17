@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Exercise Bonus – Travel page</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/theme.css">
+  <script src="../js/travel-data.js"></script>
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="../../css/labnav.css">
+</head>
+<body>
+<div class="container">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="panel panel-info">
+        <div class="panel-heading">Continents</div>
+        <script>outputContinents();</script>
+      </div>
+      <div class="panel panel-info">
+        <div class="panel-heading">Popular Countries</div>
+        <script>outputCountries("Canada");</script>
+      </div>
+    </div>
+
+    <div class="col-md-9">
+      <ol class="breadcrumb">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Browse</a></li>
+        <li class="active">Posts</li>
+      </ol>
+      <div class="jumbotron" id="postJumbo">
+        <h1>Posts</h1>
+        <p>Read other travellers' posts ... or create your own.</p>
+        <p><a class="btn btn-warning btn-lg">Learn more &raquo;</a></p>
+      </div>
+      <div class="postlist">
+        <script>outputPosts();</script>
+      </div>
+      <script>outputPagination(9, 4);</script>
+    </div>
+  </div>
+</div>
+<nav class="lab-nav"><a href="../index.html">← Lab 08</a><span>Exercise Bonus · Bonus: Travel page</span></nav>
+</body>
+</html>

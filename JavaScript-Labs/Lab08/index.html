@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lab 08 – JavaScript 1: Language Foundations</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Ctext y=%27.9em%27 font-size=%2790%27%3E%E2%9A%A1%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="../css/exercise.css">
+</head>
+<body>
+<header class="lab-hero">
+  <div class="wrap">
+    <a class="back" href="../index.html">← Về trang chủ JavaScript-Labs</a>
+    <h1>Lab 08 – JavaScript 1: Language Foundations</h1>
+    <p>Nhúng JavaScript, Console, String/Date/Math, mảng, hàm, đối tượng và mảng đối tượng.</p>
+    <span class="pill">12 mục · mỗi mục có trang chạy thử và mã nguồn riêng</span>
+  </div>
+</header>
+<main>
+  <section style="padding:40px 0 60px">
+    <div class="wrap">
+      <div class="grid cols4">
+      <article class="card">
+        <span class="tag">Exercise 8.1</span>
+        <h3>Enabling/Disabling JavaScript</h3>
+        <p>Tạo trang kiểm tra trạng thái JavaScript: mặc định hiển thị “disabled”, khi JavaScript bật thì mã đổi thành “enabled”. Đã thử bật/tắt JavaScript trong trình duyệt và thử trang JavaScriptTest.php của đề bài.</p>
+        <div class="links">
+          <a class="btn btn-brand btn-sm" href="Exercise01/index.html">Chạy thử →</a>
+          <a class="btn btn-sm alt" href="Exercise01/script.js">Xem mã script.js</a>
+        </div>
+      </article>
+      <article class="card">
+        <span class="tag">Exercise 8.2</span>
+        <h3>Embedded JavaScript</h3>
+        <p>Nhúng JavaScript trực tiếp trong thẻ &lt;head&gt;. Khi mở trang, hộp thoại alert “Hello World!” xuất hiện và phải bấm OK mới xem được nội dung bên dưới.</p>
+        <div class="links">
+          <a class="btn btn-brand btn-sm" href="Exercise02/index.html">Chạy thử →</a>
+          <a class="btn btn-sm alt" href="Exercise02/index.html">Xem mã index.html</a>
+        </div>
+      </article>
+      <article class="card">
+        <span class="tag">Exercise 8.3</span>
+        <h3>External JavaScript</h3>
+        <p>Tách mã sang file ngoài hello.js và nhúng ngay sau thẻ &lt;body&gt;. File dùng document.write để in chuỗi, biến count và kết quả sau khi count++.</p>
+        <div class="links">
+          <a class="btn btn-brand btn-sm" href="Exercise03/index.html">Chạy thử →</a>
+          <a class="btn btn-sm alt" href="Exercise03/hello.js">Xem mã hello.js</a>
+        </div>
+      </article>
+      <article class="card">
+        <span class="tag">Exercise 8.4</span>
+        <h3>Using noscript</h3>
+        <p>Thêm thẻ &lt;noscript&gt; sau thẻ &lt;script&gt; để hiển thị thông báo cho người dùng đã tắt JavaScript. Đã kiểm tra bằng cách tắt JavaScript rồi tải lại trang.</p>
+        <div class="links">
+          <a class="btn btn-brand btn-sm" href="Exercise04/index.html">Chạy thử →</a>
+          <a class="btn btn-sm alt" href="Exercise04/hello.js">Xem mã hello.js</a>
+        </div>
+      </article>
+      <article class="card">
+        <span class="tag">Exercise 8.5</span>
+        <h3>Using the Browser Console</h3>
+        <p>Chuyển hello.js vào thư mục js/, thử cố ý gõ sai document → Console báo lỗi “doccumment is not defined”, sau đó sửa lại. Dùng Console để xem biến count, output, tính temp = count * 7 và thử console.log / warn / error.</p>
+        <div class="links">
+          <a class="btn btn-brand btn-sm" href="Exercise05/index.html">Chạy thử →</a>
+          <a class="btn btn-sm alt" href="Exercise05/js/hello.js">Xem mã js/hello.js</a>
+        </div>
+      </article>
+      <article class="card">
+        <span class="tag">Exercise 8.6</span>
+        <h3>Using built-in JavaScript objects</h3>
+        <p>Tạo đối tượng String bằng new và chuỗi literal, so sánh typeof và phép so sánh == với ===. Tạo đối tượng Date hiện tại và dùng Math.PI, Math.sqrt(), Math.random().</p>
+        <div class="links">
+          <a class="btn btn-brand btn-sm" href="Exercise06/index.html">Chạy thử →</a>
+          <a class="btn btn-sm alt" href="Exercise06/script.js">Xem mã script.js</a>
+        </div>
+      </article>
+      <article class="card">
+        <span class="tag">Exercise 8.7</span>
+        <h3>Arrays</h3>
+        <p>Tạo mảng các thứ trong tuần, thêm Sat bằng push() và Sun bằng unshift(). Duyệt mảng bằng vòng for để dựng bảng, in nghiêng các nhãn dài hơn 3 ký tự, rồi dùng thêm vòng lặp để in lịch các ngày 1–30.</p>
+        <div class="links">
+          <a class="btn btn-brand btn-sm" href="Exercise07/index.html">Chạy thử →</a>
+          <a class="btn btn-sm alt" href="Exercise07/script.js">Xem mã script.js</a>
+        </div>
+      </article>
+      <article class="card">
+        <span class="tag">Exercise 8.8</span>
+        <h3>JavaScript Functions</h3>
+        <p>Viết hàm outputBox(num) với tham số và giá trị trả về, gọi trong vòng lặp để tạo 5 khung div. Thử biến toàn cục boxClass và quan sát phạm vi biến box (var trong hàm) qua thông báo ở Console.</p>
+        <div class="links">
+          <a class="btn btn-brand btn-sm" href="Exercise08/index.html">Chạy thử →</a>
+          <a class="btn btn-sm alt" href="Exercise08/script.js">Xem mã script.js</a>
+        </div>
+      </article>
+      <article class="card">
+        <span class="tag">Exercise 8.9</span>
+        <h3>Functions as Objects</h3>
+        <p>Tính thuế và tổng tiền đơn hàng ($15 × 2, thuế 5% → $31.50). Lần lượt lồng hàm, gán hàm vào biến, dùng hàm ẩn danh và cuối cùng truyền hàm ẩn danh làm tham số cho calculateTax().</p>
+        <div class="links">
+          <a class="btn btn-brand btn-sm" href="Exercise09/index.html">Chạy thử →</a>
+          <a class="btn btn-sm alt" href="Exercise09/script.js">Xem mã script.js</a>
+        </div>
+      </article>
+      <article class="card">
+        <span class="tag">Exercise 8.10</span>
+        <h3>Creating JavaScript Objects</h3>
+        <p>Tạo đối tượng order (sản phẩm, giá, số lượng, phương thức total) bằng new Object(), {} với ngoặc vuông, object literal và constructor function. Tạo hai thể hiện example1, example2 và thêm phương thức output().</p>
+        <div class="links">
+          <a class="btn btn-brand btn-sm" href="Exercise10/index.html">Chạy thử →</a>
+          <a class="btn btn-sm alt" href="Exercise10/script.js">Xem mã script.js</a>
+        </div>
+      </article>
+      <article class="card">
+        <span class="tag">Exercise 8.11</span>
+        <h3>Arrays of Objects</h3>
+        <p>Xây dựng constructor Country và mảng 5 quốc gia (khởi tạo + push). Duyệt mảng bằng nhiều cách: thuộc tính .name, biến tạm, ký hiệu ngoặc vuông, biến làm khóa và for…in để in mọi thuộc tính cùng lá cờ.</p>
+        <div class="links">
+          <a class="btn btn-brand btn-sm" href="Exercise11/index.html">Chạy thử →</a>
+          <a class="btn btn-sm alt" href="Exercise11/script.js">Xem mã script.js</a>
+        </div>
+      </article>
+      <article class="card">
+        <span class="tag">Bài mở rộng</span>
+        <h3>Travel page – hàm sinh HTML</h3>
+        <p>Bài mở rộng từ file exercise.html của bộ Lab: viết các hàm outputContinents(), outputCountries(), outputPosts(), outputPagination() để sinh danh sách, bài viết và phân trang từ mảng dữ liệu. Cách làm này tương tự việc hiển thị danh sách sản phẩm trong cửa hàng trực tuyến.</p>
+        <div class="links">
+          <a class="btn btn-brand btn-sm" href="Exercise12/index.html">Chạy thử →</a>
+          <a class="btn btn-sm alt" href="Exercise12/script.js">Xem mã script.js</a>
+        </div>
+      </article>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="site"><div class="wrap"><a href="../index.html">← Trang chủ</a> · Phát triển ứng dụng TMĐT – UEH</div></footer>
+</body>
+</html>
