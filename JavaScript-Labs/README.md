@@ -51,10 +51,3 @@ Sau khi tải thư mục `JavaScript-Labs` lên repository hiện có và bật 
 3. Mở Developer Tools (F12) → Console để xem thông báo hoặc lỗi JavaScript.
 4. Với Lab 10, jQuery được nạp từ `assets/js/jquery-3.1.1.min.js` nên các bài selector và animation không phụ thuộc CDN.
 5. Exercise 10.9 và 10.10 cần Internet và dịch vụ GET bên ngoài còn hoạt động; nếu máy chủ chặn CORS hoặc không phản hồi, giao diện sẽ hiển thị lỗi.
-
-## Lưu ý hoàn thiện trước khi nộp
-- Điền MSSV, lớp học phần và URL GitHub trong `index.html` và README.
-- Đưa thư mục này vào **repository hiện có**, không tạo repository mới.
-- Kiểm tra toàn bộ liên kết, ảnh, CSS và JavaScript sau khi triển khai.
-- Chụp ảnh màn hình thực tế sau khi tự chạy và thao tác các Exercise; ảnh trong báo cáo hiện tại là ảnh chụp trang thực hành được mở trên trình duyệt trong môi trường tạo sản phẩm, không thay thế ảnh thao tác cá nhân nếu giảng viên yêu cầu minh chứng quá trình làm bài.
-- Bật repository Public và cấu hình GitHub Pages theo yêu cầu giảng viên.
