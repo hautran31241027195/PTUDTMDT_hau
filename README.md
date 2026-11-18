@@ -74,10 +74,10 @@ PTUDTMDT_hau-main/
 
 ## Truy cập GitHub Pages
 
-- Trang chủ: [https://hautran31241027195.github.io/PTUDTMDT_hau/JavaScript-Labs/index.html](url)
-- Lab 08: [https://hautran31241027195.github.io/PTUDTMDT_hau/JavaScript-Labs/Lab08/index.html](url)
-- Lab 09: [https://hautran31241027195.github.io/PTUDTMDT_hau/JavaScript-Labs/Lab09/index.html](url)
-- Lab 10: [https://hautran31241027195.github.io/PTUDTMDT_hau/JavaScript-Labs/Lab10/index.html](url)
+- Trang chủ: [https://hautran31241027195.github.io/PTUDTMDT_hau/JavaScript-Labs/](url)
+- Lab 08: [https://hautran31241027195.github.io/PTUDTMDT_hau/JavaScript-Labs/Lab08/](url)
+- Lab 09: [https://hautran31241027195.github.io/PTUDTMDT_hau/JavaScript-Labs/Lab09/](url)
+- Lab 10: [https://hautran31241027195.github.io/PTUDTMDT_hau/JavaScript-Labs/Lab10/](url)
 
 ## Hướng dẫn chạy
 1. Mở `index.html` bằng trình duyệt hoặc chạy bằng Live Server.
