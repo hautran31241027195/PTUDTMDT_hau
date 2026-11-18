@@ -4,32 +4,67 @@
 - Họ và tên: Trần Lê Như Hậu
 - MSSV: 31241027195
 - Lớp học phần: 26C1INF50902702
-- GitHub cá nhân: **[BỔ SUNG URL GITHUB]**
+- GitHub cá nhân: [https://github.com/hautran31241027195](url)
 
 ## Mục tiêu
 Hoàn thành Lab 08, Lab 09 và Lab 10 theo tài liệu thực hành Chương 4: JavaScript. Mỗi Exercise được tổ chức thành một thư mục riêng có `index.html` và `script.js` khi cần thiết.
 
 ## Cấu trúc thư mục
 ```text
-JavaScript-Labs/
+PTUDTMDT_hau-main/
+│
 ├── index.html
 ├── README.md
 ├── css/
 │   └── style.css
-├── assets/
-│   ├── flags/
-│   ├── images/
-│   ├── jquery-images/
-│   └── js/jquery-3.1.1.min.js
-├── Lab08/
+├── images/
+│   └── Ảnh thẻ.jpg
+│
+├── Các bài thực hành trước đó/
 │   ├── index.html
-│   └── Exercise08-01/ ... Exercise08-11/
-├── Lab09/
-│   ├── index.html
-│   └── Exercise09-01/ ... Exercise09-08/
-└── Lab10/
+│   ├── BaiTap1/ ...  BaiTap9/
+│   │   └── BaiTap1.html ... BaiTap9.html
+│   ├── css/
+│   │   └── style.css
+│   └── images/
+│
+└── JavaScript-Labs/
     ├── index.html
-    └── Exercise10-01/ ... Exercise10-10/
+    ├── css/
+    │   ├── exercise.css
+    │   ├── labnav.css
+    │   └── style.css
+    ├── images/
+    │   └── avatar.svg
+    ├── js/
+    │   └── main.js
+    │
+    ├── Lab08/
+    │   ├── index.html
+    │   ├── Exercise01/ ... Exercise12/
+    │   │   ├── index.html
+    │   │   └── script.js hoặc hello.js
+    │   ├── css/
+    │   ├── flags/
+    │   ├── images/
+    │   └── js/
+    │
+    ├── Lab09/
+    │   ├── index.html
+    │   ├── Exercise01/ ... Exercise08/
+    │   │   ├── index.html
+    │   │   └── script.js
+    │   ├── css/
+    │   └── images/
+    │
+    └── Lab10/
+        ├── index.html
+        ├── Exercise01/ ... Exercise10/
+        │   ├── index.html
+        │   └── script.js
+        ├── css/
+        ├── images/
+        └── js/
 ```
 
 ## Nội dung các Lab
@@ -38,12 +73,11 @@ JavaScript-Labs/
 - **Lab 10 – JavaScript 3: jQuery:** cài đặt jQuery, selectors, listeners, chèn DOM, animation, GET requests và jqXHR.
 
 ## Truy cập GitHub Pages
-Sau khi tải thư mục `JavaScript-Labs` lên repository hiện có và bật GitHub Pages, thay `USERNAME` và `REPOSITORY` bằng thông tin thật:
 
-- Trang chủ: `https://USERNAME.github.io/REPOSITORY/JavaScript-Labs/`
-- Lab 08: `https://USERNAME.github.io/REPOSITORY/JavaScript-Labs/Lab08/`
-- Lab 09: `https://USERNAME.github.io/REPOSITORY/JavaScript-Labs/Lab09/`
-- Lab 10: `https://USERNAME.github.io/REPOSITORY/JavaScript-Labs/Lab10/`
+- Trang chủ: `https://hautran31241027195.github.io/PTUDTMDT_hau/JavaScript-Labs/`
+- Lab 08: `https://hautran31241027195.github.io/PTUDTMDT_hau/JavaScript-Labs/Lab08/`
+- Lab 09: `https://hautran31241027195.github.io/PTUDTMDT_hau/JavaScript-Labs/Lab09/`
+- Lab 10: `https://hautran31241027195.github.io/PTUDTMDT_hau/JavaScript-Labs/Lab10/`
 
 ## Hướng dẫn chạy
 1. Mở `index.html` bằng trình duyệt hoặc chạy bằng Live Server.
