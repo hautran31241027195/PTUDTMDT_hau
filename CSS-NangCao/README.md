@@ -17,18 +17,18 @@ Hoàn thành 19 Exercise của Lab 07 (Chương 5 – Advanced CSS: Layout):
 ## Cấu trúc thư mục
 ```text
 CSS-NangCao/
-├── index.html              # Trang chủ: thông tin cá nhân, giới thiệu, liên kết Exercise, tổng kết
+├── index.html              
 ├── README.md
-├── css/style.css           # CSS của trang chủ
-├── images/avatar.jpg       # Ảnh đại diện
+├── css/style.css           
+├── images/avatar.jpg       
 └── Lab07/
-    ├── index.html          # Trang danh sách 19 Exercise
-    ├── css/                # lab07.css (trang danh sách) + labnav.css (thanh điều hướng nhỏ)
-    ├── bootstrap/          # Bootstrap 3 (css, js, fonts) dùng cho Exercise 7.19
-    ├── images/             # Hình ảnh dùng chung cho các Exercise
+    ├── index.html          
+    ├── css/                
+    ├── bootstrap/          
+    ├── images/             
     ├── Exercise01/ ... Exercise19/
-    │   ├── index.html      # Mã HTML của Exercise
-    │   └── lab07-exerciseNN.css   # CSS tương ứng (Exercise 7.12 và 7.13: desktop + mobile)
+    │   ├── index.html      
+    │   └── lab07-exerciseNN.css   
 ```
 
 ## Nội dung các nhóm Exercise
