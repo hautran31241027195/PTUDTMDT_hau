@@ -1,4 +1,4 @@
-# JavaScript-Labs – Phát triển ứng dụng TMĐT
+# Phát triển ứng dụng TMĐT
 
 ## Thông tin sinh viên
 - Họ và tên: Trần Lê Như Hậu
@@ -7,7 +7,7 @@
 - GitHub cá nhân: [https://github.com/hautran31241027195](url)
 
 ## Mục tiêu
-Hoàn thành Lab 08, Lab 09 và Lab 10 theo tài liệu thực hành Chương 4: JavaScript. Mỗi Exercise được tổ chức thành một thư mục riêng có `index.html` và `script.js` khi cần thiết.
+Hoàn thành Lab 07, Lab 08, Lab 09 và Lab 10 theo tài liệu thực hành. Mỗi Exercise được tổ chức thành một thư mục riêng có `index.html`, `style.css` và `script.js` khi cần thiết.
 
 ## Cấu trúc thư mục
 ```text
@@ -27,6 +27,10 @@ PTUDTMDT_hau-main/
 │   ├── css/
 │   │   └── style.css
 │   └── images/
+│
+├── CSS-NangCao/
+│   ├── index.html, README.md, css/, images/
+│   └── Lab07/ (Exercise01 ... Exercise19, bootstrap/, images/, index.html)
 │
 └── JavaScript-Labs/
     ├── index.html
@@ -68,6 +72,7 @@ PTUDTMDT_hau-main/
 ```
 
 ## Nội dung các Lab
+- **Lab 07 – Advanced CSS: Layout:** document flow, positioning, float, bố cục nhiều cột, responsive, transforms/transitions/filters/animations và Bootstrap.
 - **Lab 08 – JavaScript 1: Language Foundations:** nhúng JavaScript, external script, noscript, Browser Console, String, Date, Math, Array, Function và Object.
 - **Lab 09 – JavaScript 2: DOM and Events:** DOM selection, DOM family relations, tạo/xóa phần tử, event listeners, load event, debugging, form focus/blur và validation.
 - **Lab 10 – JavaScript 3: jQuery:** cài đặt jQuery, selectors, listeners, chèn DOM, animation, GET requests và jqXHR.
@@ -75,6 +80,7 @@ PTUDTMDT_hau-main/
 ## Truy cập GitHub Pages
 
 - Trang chủ: [https://hautran31241027195.github.io/PTUDTMDT_hau/JavaScript-Labs/](url)
+- Lab 07: [https://hautran31241027195.github.io/PTUDTMDT_hau/CSS-NangCao/Lab07/](url)
 - Lab 08: [https://hautran31241027195.github.io/PTUDTMDT_hau/JavaScript-Labs/Lab08/](url)
 - Lab 09: [https://hautran31241027195.github.io/PTUDTMDT_hau/JavaScript-Labs/Lab09/](url)
 - Lab 10: [https://hautran31241027195.github.io/PTUDTMDT_hau/JavaScript-Labs/Lab10/](url)
@@ -82,6 +88,3 @@ PTUDTMDT_hau-main/
 ## Hướng dẫn chạy
 1. Mở `index.html` bằng trình duyệt hoặc chạy bằng Live Server.
 2. Chọn Lab cần xem, sau đó chọn Exercise tương ứng.
-3. Mở Developer Tools (F12) → Console để xem thông báo hoặc lỗi JavaScript.
-4. Với Lab 10, jQuery được nạp từ `assets/js/jquery-3.1.1.min.js` nên các bài selector và animation không phụ thuộc CDN.
-5. Exercise 10.9 và 10.10 cần Internet và dịch vụ GET bên ngoài còn hoạt động; nếu máy chủ chặn CORS hoặc không phản hồi, giao diện sẽ hiển thị lỗi.
