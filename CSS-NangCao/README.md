@@ -40,8 +40,6 @@ CSS-NangCao/
 | 7.14 – 7.18 | Transforms, transitions, filters, animations |
 | 7.19 | Bootstrap grid system |
 
-Ghi chú: Bộ file được cung cấp không có `lab07-exercise13.html`. Exercise 7.13 yêu cầu tiếp tục từ 7.12, nên `Exercise13/` là bản sao của `Exercise12/` được bổ sung viewport và `<select>` điều hướng cho mobile.
-
 ## Đường dẫn GitHub Pages
 - Trang chủ CSS-NangCao: https://hautran31241027195.github.io/PTUDTMDT_hau/CSS-NangCao/
 - Danh sách Lab 07: https://hautran31241027195.github.io/PTUDTMDT_hau/CSS-NangCao/Lab07/
