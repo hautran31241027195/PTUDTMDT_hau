@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Exercise 10.5 – Inserting DOM Elements</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="../css/lab10.css">
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script type="text/javascript">
+    // ghi nhớ xem jQuery có tải được từ CDN hay không, rồi mới dùng bản dự phòng
+    var jqFromCDN = !!window.jQuery;
+    window.jQuery ||
+      document.write('<script src="../js/jquery-3.1.1.min.js"><\/script>');
+  </script>
+  <link rel="stylesheet" href="../../css/labnav.css">
+</head>
+<body>
+<div class="panel">
+    <p>existing content</p>
+</div>
+
+<script type="text/javascript" src="script.js"></script>
+<p style="font:14px Arial;margin:20px">Rê chuột lên từng ảnh để xem phương thức đã chèn nó (thuộc tính title). Ảnh nằm trong khung xám là do append/prepend/appendTo/prependTo; ảnh nằm ngoài là do after/before/insertBefore.</p>
+<nav class="lab-nav"><a href="../index.html">← Lab 10</a><span>Exercise 10.5 · Insert DOM</span></nav>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lab 10 – JavaScript 3: jQuery</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Ctext y=%27.9em%27 font-size=%2790%27%3E%E2%9A%A1%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="../css/exercise.css">
+</head>
+<body>
+<header class="lab-hero">
+  <div class="wrap">
+    <a class="back" href="../index.html">← Về trang chủ JavaScript-Labs</a>
+    <h1>Lab 10 – JavaScript 3: jQuery</h1>
+    <p>jQuery: selectors, sự kiện, chèn DOM, hiệu ứng, animate, GET request và jqXHR.</p>
+    <span class="pill">10 mục · mỗi mục có trang chạy thử và mã nguồn riêng</span>
+  </div>
+</header>
+<main>
+  <section style="padding:40px 0 60px">
+    <div class="wrap">
+      <div class="grid cols4">
+      <article class="card">
+        <span class="tag">Exercise 10.1</span>
+        <h3>Set up jQuery</h3>
+        <p>Nạp jQuery 3.1.1 từ CDN (dùng HTTPS để chạy được trên GitHub Pages) và thêm đoạn dự phòng window.jQuery || document.write(...) nạp file cục bộ khi CDN không khả dụng. Trang hiển thị phiên bản và nguồn tải của jQuery.</p>
+        <div class="links">
+          <a class="btn btn-brand btn-sm" href="Exercise01/index.html">Chạy thử →</a>
+          <a class="btn btn-sm alt" href="Exercise01/script.js">Xem mã script.js</a>
+        </div>
+      </article>
+      <article class="card">
+        <span class="tag">Exercise 10.2</span>
+        <h3>Basic Selectors</h3>
+        <p>Dùng jQuery chọn phần tử theo id, thẻ và class; dùng val(), html(), attr(), css(), addClass() để đặt giá trị, đổi nội dung, đọc thuộc tính, đổi màu mọi nút thành đỏ, màu nền body và tô vàng các biểu tượng.</p>
+        <div class="links">
+          <a class="btn btn-brand btn-sm" href="Exercise02/index.html">Chạy thử →</a>
+          <a class="btn btn-sm alt" href="Exercise02/script.js">Xem mã script.js</a>
+        </div>
+      </article>
+      <article class="card">
+        <span class="tag">Exercise 10.3</span>
+        <h3>Advanced Selectors</h3>
+        <p>Dùng selector nâng cao trên biểu mẫu đăng ký: :password (ô mật khẩu), form :nth-child(4n) (mỗi phần tử thứ 4) và label:contains(&quot;word&quot;) (nhãn chứa chữ “word”) để đổi màu nền/chữ.</p>
+        <div class="links">
+          <a class="btn btn-brand btn-sm" href="Exercise03/index.html">Chạy thử →</a>
+          <a class="btn btn-sm alt" href="Exercise03/script.js">Xem mã script.js</a>
+        </div>
+      </article>
+      <article class="card">
+        <span class="tag">Exercise 10.4</span>
+        <h3>jQuery Listeners</h3>
+        <p>Gắn sự kiện bằng click(), on(), dùng $(function(){}) để chờ DOM sẵn sàng; nối chuỗi mousemove, mouseleave, click trên .panel. Khi click thì gọi off(&quot;mousemove&quot;) để ngừng báo tọa độ chuột.</p>
+        <div class="links">
+          <a class="btn btn-brand btn-sm" href="Exercise04/index.html">Chạy thử →</a>
+          <a class="btn btn-sm alt" href="Exercise04/script.js">Xem mã script.js</a>
+        </div>
+      </article>
+      <article class="card">
+        <span class="tag">Exercise 10.5</span>
+        <h3>Inserting DOM Elements</h3>
+        <p>Tạo phần tử &lt;img&gt; bằng jQuery và chèn vào trang bằng after(), before(), append(), prepend(), appendTo(), prependTo(), insertBefore(); quan sát sự khác nhau giữa chèn bên trong và bên ngoài phần tử .panel.</p>
+        <div class="links">
+          <a class="btn btn-brand btn-sm" href="Exercise05/index.html">Chạy thử →</a>
+          <a class="btn btn-sm alt" href="Exercise05/script.js">Xem mã script.js</a>
+        </div>
+      </article>
+      <article class="card">
+        <span class="tag">Exercise 10.6</span>
+        <h3>Simple jQuery Animation</h3>
+        <p>Dùng fadeIn, fadeOut, fadeToggle, slideDown, slideUp, slideToggle với thời gian khác nhau để ẩn/hiện bức ảnh khi bấm các nút điều khiển.</p>
+        <div class="links">
+          <a class="btn btn-brand btn-sm" href="Exercise06/index.html">Chạy thử →</a>
+          <a class="btn btn-sm alt" href="Exercise06/script.js">Xem mã script.js</a>
+        </div>
+      </article>
+      <article class="card">
+        <span class="tag">Exercise 10.7</span>
+        <h3>More jQuery Animation</h3>
+        <p>Khi rê chuột vào ảnh nhỏ, tạo động một khung xem trước chứa ảnh lớn và chú thích, hiện dần bằng fadeIn, bám theo con trỏ bằng mousemove; ảnh nhỏ chuyển xám. Khi chuột rời đi thì xóa khung xem trước — rất giống tính năng “xem nhanh” sản phẩm.</p>
+        <div class="links">
+          <a class="btn btn-brand btn-sm" href="Exercise07/index.html">Chạy thử →</a>
+          <a class="btn btn-sm alt" href="Exercise07/script.js">Xem mã script.js</a>
+        </div>
+      </article>
+      <article class="card">
+        <span class="tag">Exercise 10.8</span>
+        <h3>Complex Animations</h3>
+        <p>Dùng animate() để thay đổi đồng thời left, opacity, height của #box, sau đó nối chuỗi thêm hai lần animate nữa (top/opacity rồi height trong 2 giây) để chúng chạy lần lượt.</p>
+        <div class="links">
+          <a class="btn btn-brand btn-sm" href="Exercise08/index.html">Chạy thử →</a>
+          <a class="btn btn-sm alt" href="Exercise08/script.js">Xem mã script.js</a>
+        </div>
+      </article>
+      <article class="card">
+        <span class="tag">Exercise 10.9</span>
+        <h3>GET Requests</h3>
+        <p>Gọi dịch vụ web trả về danh sách thành phố (JSON) bằng $.get(), kiểm tra tham số status và duyệt dữ liệu bằng $.each() để tạo các thẻ &lt;li&gt;. Vì GitHub Pages dùng HTTPS nên gọi dịch vụ bằng https và có dữ liệu mẫu cities.json dự phòng khi dịch vụ ngoài không phản hồi.</p>
+        <div class="links">
+          <a class="btn btn-brand btn-sm" href="Exercise09/index.html">Chạy thử →</a>
+          <a class="btn btn-sm alt" href="Exercise09/script.js">Xem mã script.js</a>
+        </div>
+      </article>
+      <article class="card">
+        <span class="tag">Exercise 10.10</span>
+        <h3>jqXHR Handling</h3>
+        <p>Gọi dịch vụ web bằng $.get() và xử lý kết quả qua đối tượng jqXHR: done() khi thành công, fail() khi lỗi (hiển thị status/error), always() để làm mờ ảnh loading. Hiển thị ảnh ajax-loader trong lúc chờ phản hồi.</p>
+        <div class="links">
+          <a class="btn btn-brand btn-sm" href="Exercise10/index.html">Chạy thử →</a>
+          <a class="btn btn-sm alt" href="Exercise10/script.js">Xem mã script.js</a>
+        </div>
+      </article>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="site"><div class="wrap"><a href="../index.html">← Trang chủ</a> · Phát triển ứng dụng TMĐT – UEH</div></footer>
+</body>
+</html>

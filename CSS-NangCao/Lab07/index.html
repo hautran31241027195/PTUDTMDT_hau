@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lab 07 – Advanced CSS: Layout</title>
+  <link rel="stylesheet" href="css/lab07.css">
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <a class="back" href="../index.html">← Về trang chủ CSS nâng cao</a>
+    <h1>Lab 07 – Advanced CSS: Layout</h1>
+    <p>19 Exercise về document flow, positioning, float, bố cục nhiều cột, responsive, transforms/transitions/filters/animations và Bootstrap. Mỗi Exercise có thư mục riêng chứa HTML và CSS tương ứng.</p>
+    <span class="pill">19 mục · mỗi mục có trang chạy thử và mã nguồn riêng
+</span>
+  </div>
+</header>
+<main class="wrap">
+  <section>
+    <h2><span class="grp">7.1 – 7.4</span> Document flow, positioning, z-index</h2>
+    <div class="grid">
+      <article class="card">
+        <span class="tag">Exercise 7.1</span>
+        <h3>Document Flow</h3>
+        <p>Quan sát và thay đổi cách phần tử inline/block hiển thị bằng thuộc tính display.</p>
+        <div class="links"><a class="btn" href="Exercise01/index.html">Chạy thử →</a><a class="btn alt" href="Exercise01/lab07-exercise01.css">exercise01.css</a></div>
+      </article>
+      <article class="card">
+        <span class="tag">Exercise 7.2</span>
+        <h3>Relative Positioning</h3>
+        <p>Định vị tương đối: phần tử dịch chuyển nhưng vẫn giữ chỗ trong document flow.</p>
+        <div class="links"><a class="btn" href="Exercise02/index.html">Chạy thử →</a><a class="btn alt" href="Exercise02/lab07-exercise02.css">exercise02.css</a></div>
+      </article>
+      <article class="card">
+        <span class="tag">Exercise 7.3</span>
+        <h3>Absolute Positioning</h3>
+        <p>Định vị tuyệt đối so với ancestor gần nhất có thuộc tính position.</p>
+        <div class="links"><a class="btn" href="Exercise03/index.html">Chạy thử →</a><a class="btn alt" href="Exercise03/lab07-exercise03.css">exercise03.css</a></div>
+      </article>
+      <article class="card">
+        <span class="tag">Exercise 7.4</span>
+        <h3>Stacking Using Z-Index</h3>
+        <p>Kiểm soát thứ tự chồng lớp và ảnh hưởng của quan hệ phần tử cha/con.</p>
+        <div class="links"><a class="btn" href="Exercise04/index.html">Chạy thử →</a><a class="btn alt" href="Exercise04/lab07-exercise04.css">exercise04.css</a></div>
+      </article>
+    </div>
+  </section>
+  <section>
+    <h2><span class="grp">7.5 – 7.9</span> Float, clear và positioning</h2>
+    <div class="grid">
+      <article class="card">
+        <span class="tag">Exercise 7.5</span>
+        <h3>Floating Elements</h3>
+        <p>Sử dụng float: left và float: right để cho văn bản bao quanh phần tử.</p>
+        <div class="links"><a class="btn" href="Exercise05/index.html">Chạy thử →</a><a class="btn alt" href="Exercise05/lab07-exercise05.css">exercise05.css</a></div>
+      </article>
+      <article class="card">
+        <span class="tag">Exercise 7.6</span>
+        <h3>Floating in a Container</h3>
+        <p>Phần tử float dịch chuyển sang trái/phải của container chứa nó.</p>
+        <div class="links"><a class="btn" href="Exercise06/index.html">Chạy thử →</a><a class="btn alt" href="Exercise06/lab07-exercise06.css">exercise06.css</a></div>
+      </article>
+      <article class="card">
+        <span class="tag">Exercise 7.7</span>
+        <h3>Floating Multiple Items</h3>
+        <p>Float nhiều phần tử và quan sát bố cục khi thay đổi kích thước cửa sổ.</p>
+        <div class="links"><a class="btn" href="Exercise07/index.html">Chạy thử →</a><a class="btn alt" href="Exercise07/lab07-exercise07.css">exercise07.css</a></div>
+      </article>
+      <article class="card">
+        <span class="tag">Exercise 7.8</span>
+        <h3>Floating and Clearing</h3>
+        <p>Dùng clear để kiểm soát bố cục phía sau các phần tử float.</p>
+        <div class="links"><a class="btn" href="Exercise08/index.html">Chạy thử →</a><a class="btn alt" href="Exercise08/lab07-exercise08.css">exercise08.css</a></div>
+      </article>
+      <article class="card">
+        <span class="tag">Exercise 7.9</span>
+        <h3>Using Positioning</h3>
+        <p>Kết hợp relative và absolute để đặt caption và ảnh chồng lên hình.</p>
+        <div class="links"><a class="btn" href="Exercise09/index.html">Chạy thử →</a><a class="btn alt" href="Exercise09/lab07-exercise09.css">exercise09.css</a></div>
+      </article>
+    </div>
+  </section>
+  <section>
+    <h2><span class="grp">7.10 – 7.13</span> Multi-column layout, responsive design, viewport</h2>
+    <div class="grid">
+      <article class="card">
+        <span class="tag">Exercise 7.10</span>
+        <h3>Two-Column Layout</h3>
+        <p>Bố cục hai cột bằng margin và float.</p>
+        <div class="links"><a class="btn" href="Exercise10/index.html">Chạy thử →</a><a class="btn alt" href="Exercise10/lab07-exercise10.css">exercise10.css</a></div>
+      </article>
+      <article class="card">
+        <span class="tag">Exercise 7.11</span>
+        <h3>Three-Column Layout</h3>
+        <p>Bố cục ba cột bằng absolute positioning trong container relative.</p>
+        <div class="links"><a class="btn" href="Exercise11/index.html">Chạy thử →</a><a class="btn alt" href="Exercise11/lab07-exercise11.css">exercise11.css</a></div>
+      </article>
+      <article class="card">
+        <span class="tag">Exercise 7.12</span>
+        <h3>Media Queries</h3>
+        <p>Hai stylesheet desktop/mobile được nạp theo chiều rộng màn hình.</p>
+        <div class="links"><a class="btn" href="Exercise12/index.html">Chạy thử →</a><a class="btn alt" href="Exercise12/lab07-exercise12-desktop.css">exercise12-desktop.css</a><a class="btn alt" href="Exercise12/lab07-exercise12-mobile.css">exercise12-mobile.css</a><a class="btn alt" href="Exercise12/lab07-exercise12.css">exercise12.css</a></div>
+      </article>
+      <article class="card">
+        <span class="tag">Exercise 7.13</span>
+        <h3>Setting the Viewport</h3>
+        <p>Khai báo viewport; mobile dùng thẻ select thay cho danh sách điều hướng.</p>
+        <div class="links"><a class="btn" href="Exercise13/index.html">Chạy thử →</a><a class="btn alt" href="Exercise13/lab07-exercise13-desktop.css">exercise13-desktop.css</a><a class="btn alt" href="Exercise13/lab07-exercise13-mobile.css">exercise13-mobile.css</a></div>
+      </article>
+    </div>
+  </section>
+  <section>
+    <h2><span class="grp">7.14 – 7.18</span> Transforms, transitions, filters, animations</h2>
+    <div class="grid">
+      <article class="card">
+        <span class="tag">Exercise 7.14</span>
+        <h3>Transforms</h3>
+        <p>Thực hành rotate, skew, translate và scale.</p>
+        <div class="links"><a class="btn" href="Exercise14/index.html">Chạy thử →</a><a class="btn alt" href="Exercise14/lab07-exercise14.css">exercise14.css</a></div>
+      </article>
+      <article class="card">
+        <span class="tag">Exercise 7.15</span>
+        <h3>Transitions</h3>
+        <p>Hiệu ứng chuyển đổi màu nền của nút khi hover.</p>
+        <div class="links"><a class="btn" href="Exercise15/index.html">Chạy thử →</a><a class="btn alt" href="Exercise15/lab07-exercise15.css">exercise15.css</a></div>
+      </article>
+      <article class="card">
+        <span class="tag">Exercise 7.16</span>
+        <h3>More Transitions</h3>
+        <p>Kết hợp nhiều thuộc tính (màu, bóng đổ, scale) trong một transition.</p>
+        <div class="links"><a class="btn" href="Exercise16/index.html">Chạy thử →</a><a class="btn alt" href="Exercise16/lab07-exercise16.css">exercise16.css</a></div>
+      </article>
+      <article class="card">
+        <span class="tag">Exercise 7.17</span>
+        <h3>Filters</h3>
+        <p>saturate, grayscale, contrast, brightness, blur, invert, sepia, hue-rotate, opacity và combo.</p>
+        <div class="links"><a class="btn" href="Exercise17/index.html">Chạy thử →</a><a class="btn alt" href="Exercise17/lab07-exercise17.css">exercise17.css</a></div>
+      </article>
+      <article class="card">
+        <span class="tag">Exercise 7.18</span>
+        <h3>Animations</h3>
+        <p>@keyframes, animation-duration, iteration-count, delay và shorthand animation.</p>
+        <div class="links"><a class="btn" href="Exercise18/index.html">Chạy thử →</a><a class="btn alt" href="Exercise18/lab07-exercise18.css">exercise18.css</a></div>
+      </article>
+    </div>
+  </section>
+  <section>
+    <h2><span class="grp">7.19</span> Bootstrap grid system</h2>
+    <div class="grid">
+      <article class="card">
+        <span class="tag">Exercise 7.19</span>
+        <h3>Using Bootstrap</h3>
+        <p>Bootstrap grid, navbar, panel, list-group, jumbotron, button và nested columns.</p>
+        <div class="links"><a class="btn" href="Exercise19/index.html">Chạy thử →</a></div>
+      </article>
+    </div>
+  </section>
+</main>
+<footer class="site"><div class="wrap"><a href="../../index.html">← Trang chủ</a> · Phát triển ứng dụng TMĐT – UEH</div></footer>
+</body>
+</html>

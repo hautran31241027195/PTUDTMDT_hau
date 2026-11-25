@@ -1,0 +1,295 @@
+/* ==========================================================================
+   1. BIẾN MÀU SẮC & CÀI ĐẶT CHUNG (RESET)
+   ========================================================================== */
+:root {
+  --brand: #4545a7;
+  --dark: #171f3a;
+  --teal: #438f91;
+  --accent: #f28c28;
+  --bg: #f4f6f9;
+  --line: #e5e9f2;
+  --radius: 16px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Segoe UI", system-ui, Roboto, Arial, sans-serif;
+  background-color: var(--bg);
+  color: #172033;
+  line-height: 1.65;
+}
+
+/* Khung bao nội dung chính căn giữa trang */
+.wrap {
+  width: min(1120px, 92%);
+  margin: 0 auto;
+  padding: 24px 0;
+}
+
+/* ==========================================================================
+   2. HEADER (PHẦN ĐẦU TRANG)
+   ========================================================================== */
+header {
+  background: linear-gradient(135deg, var(--dark), var(--brand));
+  color: #fff;
+  text-align: center;
+  padding: 36px 20px;
+}
+
+header h1 {
+  font-size: 30px;
+  letter-spacing: 2px;
+}
+
+header p {
+  margin-top: 8px;
+  font-size: 14px;
+  opacity: 0.92;
+}
+
+/* ==========================================================================
+   3. THÔNG TIN CÁ NHÂN (PROFILE - BỐ CỤC FLEXBOX)
+   ========================================================================== */
+.profile {
+  width: min(1000px, 92%);
+  margin: 30px auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Áp dụng cho cả thẻ img lẫn class .avatar bên trong .profile */
+.profile img,
+.avatar {
+  width: 200px;
+  height: 250px;
+  border-radius: 12px;
+  object-fit: cover;
+  border: 3px solid var(--line);
+  flex-shrink: 0;
+  transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.profile img:hover,
+.avatar:hover {
+  transform: rotate(-3deg) scale(1.04);
+  filter: saturate(1.3);
+}
+
+.profile-info {
+  flex: 1;
+}
+
+.profile-info h2 {
+  color: #4343a6;
+  margin-bottom: 12px;
+  font-size: 1.35rem;
+}
+
+.profile-info h3 {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.profile-info p {
+  margin: 7px 0;
+}
+
+.profile-info i {
+  color: var(--teal);
+  width: 22px;
+}
+
+.introduction {
+  margin-top: 14px;
+}
+
+/* Hàng nút liên kết mạng xã hội */
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.social-links a {
+  text-decoration: none;
+  background-color: #315c81;
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-size: 13px;
+  transition: background 0.25s, transform 0.25s;
+}
+
+.social-links a i {
+  color: #fff;
+  width: auto;
+  margin-right: 6px;
+}
+
+.social-links a:hover {
+  background-color: var(--teal);
+  transform: translateY(-2px);
+}
+
+/* ==========================================================================
+   4. BỐ CỤC LƯỚI & THẺ NỘI DUNG (GRID & CARDS)
+   ========================================================================== */
+.title {
+  text-align: center;
+  color: var(--brand);
+  margin-bottom: 22px;
+  font-size: 1.6rem;
+}
+
+.grid {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.card {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 24px;
+  box-shadow: 0 8px 24px rgba(26, 36, 80, 0.05);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.grid .card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 32px rgba(26, 36, 80, 0.14);
+}
+
+.card h2 {
+  color: var(--brand);
+  margin: 8px 0 10px;
+}
+
+.card h3 {
+  margin: 10px 0 8px;
+  font-size: 1.1rem;
+}
+
+.card p + p {
+  margin-top: 10px;
+}
+
+/* Nhãn nhỏ (Badge / Pill) */
+.pill {
+  display: inline-block;
+  background: #eef0ff;
+  color: var(--brand);
+  padding: 3px 12px;
+  border-radius: 99px;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+/* Các thẻ chọn bài Exercise (Chips) */
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.chips a {
+  text-decoration: none;
+  font-size: 0.82rem;
+  padding: 5px 11px;
+  border-radius: 8px;
+  border: 1px solid var(--brand);
+  color: var(--brand);
+  transition: background 0.2s, color 0.2s;
+}
+
+.chips a:hover {
+  background: var(--brand);
+  color: #fff;
+}
+
+.learn p {
+  color: #4b5a5d;
+  font-size: 0.95rem;
+}
+
+/* Nút xem tất cả */
+.all {
+  text-align: center;
+  margin-top: 24px;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  background: var(--brand);
+  color: #fff;
+  padding: 10px 22px;
+  border-radius: 10px;
+  font-weight: 600;
+  transition: background 0.25s, transform 0.25s;
+}
+
+.btn:hover {
+  background: var(--dark);
+  transform: translateY(-2px);
+}
+
+/* Điểm nhấn viền cam cho khung Tự đánh giá */
+.review {
+  border-left: 6px solid var(--accent);
+}
+
+/* ==========================================================================
+   5. CHÂN TRANG (FOOTER)
+   ========================================================================== */
+footer {
+  text-align: center;
+  background: var(--dark);
+  color: #cfd3ea;
+  padding: 28px 10px;
+  margin-top: 30px;
+  font-size: 0.9rem;
+}
+
+/* ==========================================================================
+   6. TƯƠNG THÍCH THIẾT BỊ DI ĐỘNG (RESPONSIVE)
+   ========================================================================== */
+@media (max-width: 720px) {
+  .profile {
+    flex-direction: column;
+    text-align: center;
+    padding: 22px;
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Tắt hiệu ứng chuyển động nếu người dùng bật chế độ giảm chuyển động */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+  }
+}

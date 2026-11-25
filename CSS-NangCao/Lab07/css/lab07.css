@@ -1,0 +1,191 @@
+/* ==========================================================================
+   1. BIẾN MÀU SẮC & CÀI ĐẶT CHUNG (RESET)
+   ========================================================================== */
+:root {
+  --brand: #4545a7;
+  --dark: #171f3a;
+  --accent: #f28c28;
+  --bg: #f4f6f9;
+  --line: #e5e9f2;
+  --radius: 16px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  background-color: var(--bg);
+  color: #1c2b2e;
+  line-height: 1.6;
+}
+
+/* Khung bao nội dung chính căn giữa trang */
+.wrap {
+  width: min(1120px, 92%);
+  margin: 0 auto;
+}
+
+/* ==========================================================================
+   2. HEADER / HERO BANNER
+   ========================================================================== */
+.hero {
+  background: linear-gradient(135deg, var(--dark), var(--brand));
+  color: #fff;
+  padding: 44px 0;
+}
+
+.hero .back {
+  color: #ffd9a8;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.hero h1 {
+  margin: 6px 0 8px;
+}
+
+.hero p {
+  max-width: 780px;
+  opacity: 0.92;
+}
+
+/* Nhãn thông tin trên banner */
+.pill {
+  display: inline-block;
+  margin-top: 14px;
+  padding: 3px 12px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.16);
+  font-size: 0.85rem;
+}
+
+/* ==========================================================================
+   3. NỘI DUNG CHÍNH & TIÊU ĐỀ NHÓM BÀI
+   ========================================================================== */
+main section {
+  padding: 34px 0 6px;
+}
+
+main h2 {
+  color: var(--brand);
+  font-size: 1.3rem;
+  margin-bottom: 16px;
+}
+
+/* Khối số thứ tự nhóm (VD: 7.1 - 7.4) */
+.grp {
+  background-color: var(--brand);
+  color: #fff;
+  padding: 2px 10px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  margin-right: 6px;
+}
+
+/* ==========================================================================
+   4. BỐ CỤC LƯỚI & THẺ BÀI TẬP (GRID & CARDS)
+   ========================================================================== */
+.grid {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 20px;
+  box-shadow: 0 8px 24px rgba(26, 36, 80, 0.05);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 30px rgba(26, 36, 80, 0.14);
+}
+
+/* Nhãn phân loại trong thẻ */
+.tag {
+  align-self: flex-start;
+  background-color: #eef0ff;
+  color: var(--brand);
+  padding: 3px 10px;
+  border-radius: 99px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.card h3 {
+  margin: 10px 0 6px;
+  font-size: 1.15rem;
+  color: #172033;
+}
+
+.card p {
+  color: #5a6d70;
+  font-size: 0.93rem;
+  flex: 1; /* Đẩy hàng nút bấm xuống sát đáy thẻ cho đều nhau */
+}
+
+/* ==========================================================================
+   5. NÚT BẤM LIÊN KẾT (BUTTONS)
+   ========================================================================== */
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.btn {
+  text-decoration: none;
+  background-color: var(--brand);
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  transition: background 0.2s ease;
+}
+
+.btn:hover {
+  background-color: var(--dark);
+}
+
+/* Nút phụ viền xanh nền trắng */
+.btn.alt {
+  background-color: #fff;
+  color: var(--brand);
+  border: 1px solid var(--brand);
+}
+
+.btn.alt:hover {
+  background-color: #eef0ff;
+}
+
+/* ==========================================================================
+   6. CHÂN TRANG (FOOTER)
+   ========================================================================== */
+footer.site {
+  background-color: var(--dark);
+  color: #cfe7ea;
+  padding: 28px 0;
+  margin-top: 34px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+footer.site a {
+  color: #ffd9a8;
+  text-decoration: none;
+}
+
+footer.site a:hover {
+  text-decoration: underline;
+}

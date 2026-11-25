@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Exercise 8.8 – JavaScript Functions</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="../css/lab08.css">
+  <script type="text/javascript" language="javascript" src="script.js"></script>
+  <link rel="stylesheet" href="../../css/labnav.css">
+</head>
+<body>
+<header>
+  <h1>Illustrating Function Usage</h1>
+</header>
+
+<h2>Output will go here</h2>
+
+<script>
+   // add function calls here
+   for (count = 1; count < 6; count++) {
+      document.write(outputBox(count));
+   }
+
+   // Bước 9: box chỉ có phạm vi trong hàm (var) nên ngoài hàm sẽ báo lỗi → xem Console
+   try { console.log(box); }
+   catch (e) { console.error("Scope demo: " + e.message); }
+   // Bước 10: nếu bỏ "var" trước box, biến sẽ thành toàn cục và console.log(box) in được giá trị
+</script>
+
+<footer>
+  <p><em>Copyright &copy; 2015</em></p>
+</footer>
+<nav class="lab-nav"><a href="../index.html">← Lab 08</a><span>Exercise 8.8 · Functions</span></nav>
+</body>
+</html>

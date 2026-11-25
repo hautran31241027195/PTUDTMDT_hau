@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Exercise 8.9 – Functions as Objects</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="../css/lab08.css">
+  <script type="text/javascript" language="javascript" src="script.js"></script>
+  <link rel="stylesheet" href="../../css/labnav.css">
+</head>
+<body>
+<header>
+  <h1>More Function Fun</h1>
+</header>
+
+<table class="cart">
+   <tr class="normal">
+      <th>Price</th>
+      <td>$15.00</td>
+   </tr>
+   <tr class="normal">
+      <th>Quantity</th>
+      <td>2</td>
+   </tr>
+   <tr class="normal">
+      <th>Tax</th>
+      <td>$1.50</td>
+   </tr>
+   <tr class="total">
+      <th>Total</th>
+      <td>
+      <script>
+         var amount = calculateTotal(15, 2);
+         document.write("$" + amount.toFixed(2));
+      </script>
+      </td>
+   </tr>
+</table>
+<nav class="lab-nav"><a href="../index.html">← Lab 08</a><span>Exercise 8.9 · Functions as objects</span></nav>
+</body>
+</html>

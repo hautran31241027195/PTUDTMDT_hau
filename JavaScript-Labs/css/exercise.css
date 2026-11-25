@@ -1,0 +1,176 @@
+/* ===== JavaScript Labs – Trang danh sách exercise ===== */
+:root {
+  --brand: #4545a7;
+  --brand-d: #171f3a;
+  --accent: #f28c28;
+  --ink: #1c2b2e;
+  --muted: #5a6d70;
+  --bg: #f4f8f8;
+  --card: #ffffff;
+  --line: #dbe6e7;
+  --radius: 16px;
+  --shadow: 0 6px 24px rgba(11, 78, 90, .10);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+  line-height: 1.65;
+}
+
+a {
+  color: var(--brand);
+}
+
+.wrap {
+  width: min(1100px, 92%);
+  margin-inline: auto;
+}
+
+section {
+  padding: 64px 0;
+}
+
+/* Header trang danh sách Lab */
+.lab-hero {
+  background: linear-gradient(135deg, var(--brand-d), var(--brand));
+  color: #fff;
+  padding: 48px 0;
+}
+
+.lab-hero h1 {
+  margin: 6px 0;
+}
+
+.lab-hero p {
+  margin: 0;
+  opacity: .9;
+  max-width: 760px;
+}
+
+.lab-hero a.back {
+  color: #ffd9a8;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.lab-hero .pill {
+  display: inline-block;
+  background: rgba(255, 255, 255, .15);
+  padding: 3px 12px;
+  border-radius: 999px;
+  font-size: .85rem;
+  margin-top: 12px;
+}
+
+/* Bố cục lưới & Thẻ bài tập */
+.grid {
+  display: grid;
+  gap: 22px;
+}
+
+.grid.cols4 {
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.card {
+  background: var(--card);
+  border-radius: var(--radius);
+  padding: 26px;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border: 1px solid var(--line);
+  transition: transform .2s, box-shadow .2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 14px 34px rgba(11, 78, 90, .18);
+}
+
+.card .tag {
+  align-self: flex-start;
+  background: #eef0ff;
+  color: var(--brand);
+  font-weight: 700;
+  font-size: .78rem;
+  padding: 3px 12px;
+  border-radius: 999px;
+}
+
+.card h3 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.card p {
+  margin: 0;
+  color: var(--muted);
+  flex: 1;
+  font-size: .95rem;
+}
+
+.card .links {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+/* Nút bấm */
+.btn {
+  display: inline-block;
+  padding: 11px 22px;
+  border-radius: 999px;
+  border: 0;
+  font-weight: 600;
+  font-size: .98rem;
+  font-family: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform .15s, box-shadow .15s;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, .2);
+}
+
+.btn-brand {
+  background: var(--brand);
+  color: #fff;
+}
+
+.btn-sm {
+  padding: 7px 14px;
+  font-size: .88rem;
+}
+
+.card .links a.alt {
+  background: #eef5f6;
+  color: var(--brand-d);
+}
+
+/* Chân trang */
+footer.site {
+  background: var(--brand-d);
+  color: #cfe7ea;
+  padding: 28px 0;
+  text-align: center;
+  font-size: .9rem;
+}
+
+footer.site a {
+  color: #ffd9a8;
+}
